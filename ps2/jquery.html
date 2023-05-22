@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Mobile Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="path/to/custom-theme.min.css">
+
+</head>
+
+html
+<body>
+  <!-- Page 1 -->
+  <div data-role="page" id="page1">
+    <div  data-role="header">
+      <h1>Page 1</h1>
+      <img src="https://th.bing.com/th/id/OIP.IEiEaOR1fDttxyD80sj2ZwHaEs?w=277&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+    </div>
+    <div data-role="content">
+      <p>This is the content of Page 1.</p>
+      <a href="#page2" data-role="button">Go to Page 2</a>
+    </div>
+  </div>
+
+  <!-- Page 2 -->
+  <div data-role="page" id="page2">
+    <div style="    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;"  data-role="header">
+      <h1>Page 2</h1>
+      <img src="https://th.bing.com/th/id/OIP.IXhgSD0spJcPco3HZcnRjgHaEo?w=236&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+    </div>
+    <div data-role="content">
+      <p>This is the content of Page 2.</p>
+      <a href="#page1" data-role="button">Go to Page 1</a>
+    </div>
+  </div>
+
+  <div data-role="header" data-position="fixed">
+  <h1>My Mobile Website</h1>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#page1" data-icon="home" class="ui-btn-active">Home</a></li>
+      <li><a href="#page2" data-icon="info">About</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+
+</html>

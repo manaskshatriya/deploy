@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" #username placeholder="Username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="text" #password placeholder="Password" name="password" required>
+      <button (click) = "getValue(username.value, password.value)" type="submit"><a href="../profile">Login</a></button>
+    </form>
+  </div>
+</body>
+</html>

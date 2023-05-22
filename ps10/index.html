@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+      background-color: aqua;
+    }
+
+    th {
+      background-color: yellow;
+      color: red ;
+      text-align: center;
+      font-size: large;
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    #sub {
+       font-size: large; 
+       /* position: relative;
+       left: -17%; */
+    }
+    #res{
+        font-size: large;
+        /* position: relative;
+        left: -8%; */
+    }
+    #but{
+        font-size: large;
+        /* position: relative;
+        left: -20%; */
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <th colspan="2">User Form</th>
+      </tr>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password"></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><textarea id="address" name="address"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="game">Select Game:</label></td>
+        <td><ul style="list-style-type: none;">
+            <li><input type="checkbox" id="hockey" name="hockey" value="hockey">
+            <label for="hockey">Hockey</label></li>
+            <li><input type="checkbox" id="cricket" name="cricket" value="cricket">
+            <label for="cricket">Cricket</label></li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </td>
+      </tr>
+        <td>Select your age</td>
+        <td><select name="age" id="age">
+            <option value="Select">Select</option>
+            <option value="18-20">18-20</option>
+            <option value="20-25">20-25</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <input type="file" name="file" id="file">
+        </td>
+      </tr>
+      <tr aria-rowspan="2">
+        <td colspan="2"><input type="submit" id="sub" value="Submit">
+            <input type="reset" id="res" value="Reset">
+            <input type="button" id="but" value="Click Me">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
