@@ -9,7 +9,7 @@ app.use(express.json());
 
 <<<<<<< HEAD
 mongoose.connect(
-    "mongodb+srv://atharvanagmoti:Atharva20@machine-learner.rfrlve0.mongodb.net/Song?retryWrites=true&w=majority",
+    "mongodb+srv://atharvanagmoti:<password>@machine-learner.rfrlve0.mongodb.net/Song?retryWrites=true&w=majority",
 =======
 mongoose
   .connect(
