@@ -9,7 +9,7 @@ app.use(express.json());
 
 //Connect to mongo
 mongoose.connect(
-    "mongodb+srv://atharvanagmoti:Atharva20@machine-learner.rfrlve0.mongodb.net/Student?retryWrites=true&w=majority",
+    "mongodb+srv://atharvanagmoti:<password>@machine-learner.rfrlve0.mongodb.net/Student?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {

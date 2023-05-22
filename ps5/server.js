@@ -7,8 +7,14 @@ const app = express();
 const port = 4000;
 app.use(express.json());
 
+<<<<<<< HEAD
 mongoose.connect(
     "mongodb+srv://atharvanagmoti:Atharva20@machine-learner.rfrlve0.mongodb.net/Song?retryWrites=true&w=majority",
+=======
+mongoose
+  .connect(
+    "mongodb+srv://atharvanagmoti:<password>@machine-learner.rfrlve0.mongodb.net/Song?retryWrites=true&w=majority",
+>>>>>>> 735cbb1345965d0b0d1c827a9634ec0714652d6e
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {

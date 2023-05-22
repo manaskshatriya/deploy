@@ -1,0 +1,31 @@
+<!-- data.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Data List</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>User Data List</h1>
+  <ul id="userList"></ul>
+
+  <script>
+    // Retrieve stored user data from local storage
+    var userList = localStorage.getItem('userList');
+    if (userList) {
+      userList = JSON.parse(userList);
+
+      // Display user data in a list
+      var listHtml = '';
+      userList.forEach(function(user) {
+        listHtml += '<li>Name: ' + user.name + '</li>';
+        listHtml += '<li>Email: ' + user.email + '</li>';
+        listHtml += '<li>Password: ' + user.password + '</li>';
+        listHtml += '<br>';
+      });
+      $('#userList').html(listHtml);
+    }
+  </script>
+</body>
+</html>

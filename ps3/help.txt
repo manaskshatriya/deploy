@@ -16,7 +16,7 @@ STEP6:-After that search in Extensions ,type xampp you see open php/html/js in b
 
 STEP7:-Now open Extension settings of open php/html/js in browser
 
-STEP8:-NOW see the option   open-php-html-js-in-broswer:custom url to open(Also modified in:workspace )in that u see http://host/${relativeDirnameDocumentRoot}/${fileBasename}change into http://localhost/${relativeDirnameDocumentRoot}/${fileBasename}
+STEP8:-NOW see the option   open-php-html-js-in-broswer:custom url to open(Also modified in:workspace )in that u see http://host/${relativeDirnameDocumentRoot}/${fileBasename}change intohttp://localhost/${relativeDirnameDocumentRoot}/${fileBasename}
 
 STEP9:-NOW see other optionopen-php-html-js-in-broswer:Document Root Folder(Also modified in:workspace )Here u should type hdocs path /opt/lampp/htdocs/
 
