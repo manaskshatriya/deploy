@@ -7,8 +7,7 @@ const app = express();
 const port = 4000;
 app.use(express.json());
 
-mongoose
-  .connect(
+mongoose.connect(
     "mongodb+srv://atharvanagmoti:Atharva20@machine-learner.rfrlve0.mongodb.net/Song?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
@@ -53,8 +52,9 @@ app.get("/adddata", async (req, res) => {
 
 app.get("/count", async (req, res) => {
     try{    
-        const song = await Song.countDocuments(songdetails);
-        res.send(`Total Count: ${song}`)
+        const song = await Song.countDocuments();
+        const songdet = await Song.find()
+        res.send({Totalcount: song, songdet})
     }
     catch(err){
         res.send(err)
