@@ -1,0 +1,33 @@
+1] File -> Preferences:
+	Network -> Add NatNetwork
+
+2] Right click:
+	Settings-> Network-> attached to: Nat Network
+		Name: natnetwork
+
+3] start both VM:
+	terminal: sudo apt install net-tools
+
+4] on kali:
+
+	create text file ( with .txt extension and write some content in it ).
+
+5] ifconfig on both terminal
+
+6] on kali
+	scp File_name.txt user_name@ubuntu_address
+	
+	if connection refused
+	check on both
+		sudo systemctl status ssh
+		if this gives error
+			
+			then install 	
+				sudo apt install openssh-server
+
+	then click on 
+	scp File_name.txt user_name@ubuntu_address
+
+7] ls
+
+8] cat file_name.txt
