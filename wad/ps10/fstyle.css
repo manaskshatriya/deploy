@@ -1,0 +1,128 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(43, 43, 187);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+    .nav{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-sub{
+        flex-direction: column;
+    }
+}
+
+.nav h1{
+   font-size: 3.5rem;
+}
+
+.nav-sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-sub input{
+   padding: 3px;
+   margin: 4px 0;
+}
+
+.nav-sub button{
+   padding: 4px 8px;
+   cursor: pointer;
+   margin: 4px 0;
+}
+
+.nav-sub button:hover{
+   padding: 4px 8px;
+   cursor: pointer;
+   background-color: whitesmoke;
+   margin: 4px 0;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: rgb(229, 221, 221);
+    color: rgb(43, 43, 187);
+}
+
+.main h1{
+    color: rgb(43, 43, 187);
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main h2{
+    color: rgb(43, 43, 187);
+    font-weight: 200;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+.main img{
+    margin: 20px;
+}
+
+.left_sec
+{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left_sec input{
+    padding: 3px;
+    margin: 1px 0;
+    padding: 10px 0;
+    text-indent: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.left_sec label{
+    font-size:1.2 rem;
+    margin :0 10px 0 0;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: rgb(4, 92, 10);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    padding: 10px 20px;
+
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    background-color: rgb(11, 188, 22);
+}
