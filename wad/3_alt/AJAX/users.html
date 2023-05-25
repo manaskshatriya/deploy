@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Users | AJAX Code</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .backend-status {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .pending {
+            background: rgb(255, 165, 0);
+        }
+
+        .success {
+            background: rgb(0, 128, 0);
+        }
+
+        .error {
+            background: rgb(255, 0, 0);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            background: #000;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table thead tr th {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+
+        table tbody tr td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+
+        table tbody tr td img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center">Fetch Data</h1>
+    <div class="buttons">
+        <button onclick="fetchDataFromAPI()">From Backend</button>
+        <button onclick="fetchDataFromLocal()">From Local Storage</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Avatar</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <div id="backend-status" class="backend-status"></div>
+</body>
+<script src="./users.js" async defer></script>
+
+</html>
